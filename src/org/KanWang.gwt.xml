@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When updating your version of GWT, you should also update this DTD reference,
+  so that your app can take advantage of the latest GWT module capabilities.
+-->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.0//EN"
+  "http://google-web-toolkit.googlecode.com/svn/tags/2.5.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to='kanwang'>
+  <inherits name='com.google.gwt.user.User'/>
+   <inherits name='com.google.gwt.inject.Inject'/>
+  <inherits name='com.google.gwt.appengine.channel.Channel'/>
+  <inherits name='com.google.gwt.user.theme.clean.Clean'></inherits>
+  <inherits name="com.google.gwt.i18n.I18N"/>
+  
+
+  <inherits name='com.google.common.collect.Collect'/>
+
+  <entry-point class='org.kanwang.hw3.ChessEntryPoint'/>
+  <extend-property name="locale" values="zh"/>
+
+  <add-linker name="xsiframe"/>
+  
+  <source path='kanwang'/>
+  <source path='shared'/>
+
+</module>

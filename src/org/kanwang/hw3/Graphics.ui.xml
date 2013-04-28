@@ -1,0 +1,47 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">	
+	<ui:style field="css" type="org.kanwang.hw3.GameCss">
+		.highlighted {
+			outline: dotted green 2px;
+		}
+		.selected{
+			outline: inset #d38e35 3px;
+		}
+		.showEnd{
+			outline: inset #3587b4 2px;
+		}
+		.center{
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.centerContainer{
+			margin:auto;
+			width: 900px;
+		}
+	
+		td img {
+			display: block
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:AbsolutePanel styleName="{css.centerContainer}">
+		<g:Label ui:field="gameStatus" text="Game not Begin"/>
+<!-- 		<g:Button ui:field="english"/> -->
+		<g:Button ui:field="chinese"/>
+		<g:Button ui:field="english"/>
+		</g:AbsolutePanel>		
+		<g:AbsolutePanel styleName="{css.centerContainer}">
+		<g:HorizontalPanel ui:field="userPanel" />
+		</g:AbsolutePanel>
+		<g:AbsolutePanel styleName="{css.centerContainer}">
+		<g:HorizontalPanel ui:field="matchInfoPanel" />
+		</g:AbsolutePanel>
+		<g:AbsolutePanel styleName="{css.centerContainer}">
+		<g:HorizontalPanel ui:field="matchPanel" />
+		</g:AbsolutePanel>
+		<g:Grid ui:field="gameGrid"/>		
+		<g:SimplePanel ui:field="moveContainer" />
+		<g:Grid ui:field="promotionSelect" />
+	</g:HTMLPanel>
+</ui:UiBinder> 
